@@ -11,25 +11,21 @@ namespace S130793 {
         }
 
         protected void Button1_Click(object sender, EventArgs e) {
-            PrintingSystem ps = new PrintingSystem();
-            
-            PrintableComponentLink link1 = new PrintableComponentLink();
-            link1.Component = ASPxPivotGridExporter1;
-            link1.PrintingSystem = ps;
+            PrintingSystemBase ps = new PrintingSystemBase();
+            ps.ExportOptions.Pdf.DocumentOptions.Author = "Test";
 
-            PrintableComponentLink link2 = new PrintableComponentLink();
+            PrintableComponentLinkBase link1 = new PrintableComponentLinkBase(ps);
+            link1.Component = ASPxPivotGridExporter1;
+
+            PrintableComponentLinkBase link2 = new PrintableComponentLinkBase(ps);
             WebChartControl1.DataBind();
             link2.Component = ((IChartContainer)WebChartControl1).Chart;
-            link2.PrintingSystem = ps;
 
-            CompositeLink compositeLink = new CompositeLink();
+            CompositeLinkBase compositeLink = new CompositeLinkBase(ps);
             compositeLink.Links.AddRange(new object[] { link1, link2 });
-            compositeLink.PrintingSystem = ps;
 
-            compositeLink.CreateDocument();
-            compositeLink.PrintingSystem.ExportOptions.Pdf.DocumentOptions.Author = "Test";
-            using(MemoryStream stream = new MemoryStream()) {
-                compositeLink.PrintingSystem.ExportToPdf(stream);
+            using (MemoryStream stream = new MemoryStream()) {
+                compositeLink.ExportToPdf(stream);
                 Response.Clear();
                 Response.Buffer = false;
                 Response.AppendHeader("Content-Type", "application/pdf");
