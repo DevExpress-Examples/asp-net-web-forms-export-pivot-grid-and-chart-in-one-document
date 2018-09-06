@@ -13,25 +13,21 @@ Namespace S130793
         End Sub
 
         Protected Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs)
-            Dim ps As New PrintingSystem()
+            Dim ps As New PrintingSystemBase()
+            ps.ExportOptions.Pdf.DocumentOptions.Author = "Test"
 
-            Dim link1 As New PrintableComponentLink()
+            Dim link1 As New PrintableComponentLinkBase(ps)
             link1.Component = ASPxPivotGridExporter1
-            link1.PrintingSystem = ps
 
-            Dim link2 As New PrintableComponentLink()
+            Dim link2 As New PrintableComponentLinkBase(ps)
             WebChartControl1.DataBind()
             link2.Component = DirectCast(WebChartControl1, IChartContainer).Chart
-            link2.PrintingSystem = ps
 
-            Dim compositeLink As New CompositeLink()
+            Dim compositeLink As New CompositeLinkBase(ps)
             compositeLink.Links.AddRange(New Object() { link1, link2 })
-            compositeLink.PrintingSystem = ps
 
-            compositeLink.CreateDocument()
-            compositeLink.PrintingSystem.ExportOptions.Pdf.DocumentOptions.Author = "Test"
             Using stream As New MemoryStream()
-                compositeLink.PrintingSystem.ExportToPdf(stream)
+                compositeLink.ExportToPdf(stream)
                 Response.Clear()
                 Response.Buffer = False
                 Response.AppendHeader("Content-Type", "application/pdf")
