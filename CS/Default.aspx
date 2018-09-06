@@ -36,47 +36,42 @@
         <dxpgw:ASPxPivotGridExporter ID="ASPxPivotGridExporter1" runat="server" ASPxPivotGridID="ASPxPivotGrid1">
         </dxpgw:ASPxPivotGridExporter>
         <dxchartsui:WebChartControl ID="WebChartControl1" runat="server" DataSourceID="ASPxPivotGrid1"  Height="434px" SeriesDataMember="Series" Width="861px">
-            <SeriesTemplate ArgumentDataMember="Arguments" 
-                 
-                ValueDataMembersSerializable="Values">
+            <SeriesTemplate ArgumentDataMember="Arguments"  ValueDataMembersSerializable="Values">
                 <ViewSerializable>
-<cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized">
-                </cc1:SideBySideBarSeriesView>
-</ViewSerializable>
+                    <cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized"/>
+                </ViewSerializable>
                 <LabelSerializable>
-<cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True">
-                    <FillStyle >
-                        <OptionsSerializable>
-<cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
-</OptionsSerializable>
-                    </FillStyle>
-                </cc1:SideBySideBarSeriesLabel>
-</LabelSerializable>
+                    <cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True">
+                        <FillStyle >
+                            <OptionsSerializable>
+                                <cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
+                            </OptionsSerializable>
+                        </FillStyle>
+                    </cc1:SideBySideBarSeriesLabel>
+                </LabelSerializable>
                 <PointOptionsSerializable>
-<cc1:PointOptions HiddenSerializableString="to be serialized">
-                </cc1:PointOptions>
-</PointOptionsSerializable>
+                    <cc1:PointOptions HiddenSerializableString="to be serialized"/>
+                </PointOptionsSerializable>
                 <LegendPointOptionsSerializable>
-<cc1:PointOptions HiddenSerializableString="to be serialized">
-                </cc1:PointOptions>
-</LegendPointOptionsSerializable>
+                    <cc1:PointOptions HiddenSerializableString="to be serialized"/>
+                </LegendPointOptionsSerializable>
             </SeriesTemplate>
             <DiagramSerializable>
-<cc1:XYDiagram>
-                <axisx visibleinpanesserializable="-1">
-<Range SideMarginsEnabled="True"></Range>
-</axisx>
-                <axisy visibleinpanesserializable="-1">
-<Range SideMarginsEnabled="True"></Range>
-</axisy>
-            </cc1:XYDiagram>
-</DiagramSerializable>
-            <FillStyle >
+                <cc1:XYDiagram>
+                    <axisx visibleinpanesserializable="-1">
+                        <Range SideMarginsEnabled="True"/>
+                    </axisx>
+                    <axisy visibleinpanesserializable="-1">
+                        <Range SideMarginsEnabled="True"/>
+                    </axisy>
+                </cc1:XYDiagram>
+            </DiagramSerializable>
+            <FillStyle>
                 <OptionsSerializable>
-<cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
-</OptionsSerializable>
+                    <cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
+                </OptionsSerializable>
             </FillStyle>
-            <Legend AlignmentHorizontal="Center" AlignmentVertical="TopOutside"></Legend>
+            <Legend AlignmentHorizontal="Center" AlignmentVertical="TopOutside"/>
         </dxchartsui:WebChartControl>
     </div>
     </form>
