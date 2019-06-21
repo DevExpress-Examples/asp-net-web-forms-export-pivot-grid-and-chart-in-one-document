@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # How to export ASPxPivotGrid and bound WebChartControl to the same print document
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e1164/)**
+<!-- run online end -->
 
 
 This example illustrates how to combine several ASP.NET controls in one export document. The project shows how to apply this solution to ASPxPivotGrid and WebChartControl, but it is also applicable to other components that implement the [**IPrintable**](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.IPrintable.class) and [**IBasePrintable**](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.IBasePrintable.class) interfaces. To determine if a component implements an interface, refer to our documentation (for instance, check the [ASPxPivotGridExporter](https://documentation.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGridExporter.class) class link) or source code.
