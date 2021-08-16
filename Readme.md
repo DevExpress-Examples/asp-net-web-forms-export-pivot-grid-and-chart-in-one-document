@@ -21,3 +21,6 @@ This example uses the **Printing.Core** library. Make sure that you include it i
 4. Add PrintingLinkBase objects to the [CompositeLinkBase.Links](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrintingLinks.CompositeLinkBase.Links.property) collection. 
 5. Call the [CompositeLinkBase.ExportTo[FORMAT]](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.ExportToDocx.overloads) method to export the document.
 
+### See also:
+[How to export MVCxPivotGrid and the bound ChartControl to the same print document](https://github.com/DevExpress-Examples/how-to-export-mvcxpivotgrid-and-the-bound-chartcontrol-to-the-same-print-document-t263225)
+
