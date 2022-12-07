@@ -73,7 +73,7 @@ Namespace S130793
         ''' Auto-generated field.
         ''' To modify move field declaration from designer file to code-behind file.
         ''' </remarks>
-        Protected ASPxPivotGridExporter1 As Global.DevExpress.Web.ASPxPivotGrid.Export.ASPxPivotGridExporter
+        Protected ASPxPivotGridExporter1 As Global.DevExpress.Web.ASPxPivotGrid.ASPxPivotGridExporter
 
         ''' <summary>
         ''' WebChartControl1 control.
