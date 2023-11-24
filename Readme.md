@@ -10,7 +10,7 @@
 
 This example demonstrates how to combine several ASP.NET controls in one exported document. This project shows how to apply this solution to [ASPxPivotGrid](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid) and [WebChartControl](https://docs.devexpress.com/AspNet/DevExpress.XtraCharts.Web.WebChartControl), but it is also applicable to other components that implement the [IPrintable](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPrinting.IPrintable) and [IBasePrintable](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.IBasePrintable) interfaces.
 > [!NOTE]
-> This example uses the **Printing.Core** library. Make sure that you include it into your project. 
+> This example uses the **Printing.Core** library. Make sure that you include it in your project.
 
 ## Implementation Details
 
