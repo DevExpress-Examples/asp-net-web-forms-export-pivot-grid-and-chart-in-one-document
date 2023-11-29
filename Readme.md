@@ -6,7 +6,7 @@
 
 # ASP.NET Web Forms - How to export ASPxPivotGrid and bound WebChartControl to the same print document
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e1164/)**
+**[[Run Online]](https://codecentral.devexpress.com/128566537/)**
 <!-- run online end -->
 
 This example demonstrates how to combine several ASP.NET controls in one exported document. This project shows how to apply this solution to [ASPxPivotGrid](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid) and [WebChartControl](https://docs.devexpress.com/AspNet/DevExpress.XtraCharts.Web.WebChartControl), but it is also applicable to other components that implement the [IPrintable](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPrinting.IPrintable) and [IBasePrintable](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.IBasePrintable) interfaces.
